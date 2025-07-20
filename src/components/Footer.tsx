@@ -3,7 +3,7 @@ const Footer = () => {
     return (
       <footer className="py-6 mt-12">
         <div className="container mx-auto text-center text-sm text-gray-500 px-4">
-          © 2025 Sihyun-Lim. All Rights Reserved.
+          don't let your friends find out this blog.
         </div>
       </footer>
     );
