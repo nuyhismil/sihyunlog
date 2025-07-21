@@ -9,8 +9,9 @@ const Header = () => {
           Sihyun-Lim
         </Link>
         <nav className="flex gap-4">
-          <Link href="/" className="text-gray-600 hover:text-black">Home</Link>
-          <Link href="/about" className="text-gray-600 hover:text-black">About</Link>
+          <Link href="/" className="text-gray-600 hover:text-black">About</Link>
+          <Link href="/thoughts" className="text-gray-600 hover:text-black">Thoughts</Link>
+          <Link href="/writing" className="text-gray-600 hover:text-black">Writing</Link>
         </nav>
       </div>
     </header>

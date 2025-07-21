@@ -71,6 +71,8 @@ export async function getPostData(id: string): Promise<PostData> {
     return {
         id,
         content: matterResult.content,
-        ...(matterResult.data as { title: string; date: string }),
+        ...(matterResult.data as { title: string; date: string; category: string }),
     };
 }
+
+export { getSortedPostsData, getAllPostIds, getPostData };
