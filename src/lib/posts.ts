@@ -47,7 +47,7 @@ export type PostId = {
     };
 };
 
-export function getAllPostIds(): PostId[] {
+function getAllPostIds(): PostId[] {
     const fileNames = fs.readdirSync(postsDirectory);
     return fileNames.map(fileName => {
         return {
