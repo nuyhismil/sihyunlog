@@ -28,7 +28,7 @@ export function getSortedPostsData(): Post[] {
     // Combine the data with the id
     return {
       id,
-      ...matterResult.data as { title: string; date: string }
+      ...matterResult.data as { title: string; date: string; category: string }
     }
   })
   // Sort posts by date
@@ -75,4 +75,4 @@ export async function getPostData(id: string): Promise<PostData> {
     };
 }
 
-export { getSortedPostsData, getAllPostIds, getPostData };
+export { getAllPostIds, getPostData };
