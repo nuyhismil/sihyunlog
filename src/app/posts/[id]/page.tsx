@@ -29,9 +29,10 @@ export default async function Post({ params }: { params: Promise<{ id: string }>
   }
 
   return (
-    <article className="prose dark:prose-invert max-w-2xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold">{postData.title}</h1>
-      <div className="text-gray-500 mb-4">{postData.date}</div>
+    <article className="prose dark:prose-invert container mx-auto pt-12">
+      <h1 className="mb-4">{postData.title}</h1>
+      <div>{postData.date}</div>
+      <hr className="my-8" />
       <MDXRemote source={postData.content} />
     </article>
   );

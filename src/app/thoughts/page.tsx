@@ -7,7 +7,7 @@ export default async function Thoughts() {
 
   return (
     <main className="max-w-2xl mx-auto px-4 py-8">
-      <div className="prose">
+      <div className="prose dark:prose-invert">
         <h1 className="text-3xl font-bold">Thoughts</h1>
         <br/>
         <ul>
